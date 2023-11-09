@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+ name: wp-demo-quota
+ namespace: wp-demo
+spec:
+ hard:
+   pods: "3"
+   services: "3"
+   persistentvolumeclaims: "3"
